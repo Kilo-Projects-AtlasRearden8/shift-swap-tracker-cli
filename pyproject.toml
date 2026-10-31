@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shift-swap-tracker-cli"
+version = "0.1.0"
+description = "Python CLI for shift workers to log shift swaps, coverage requests, and balance hours with local JSON and CSV export."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [{ name = "Asdale Dynamics, LLC" }]
+keywords = ["shift", "swap", "tracker", "cli", "hours", "balance"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+shift-swap-tracker = "shiftswap.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["shiftswap*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]

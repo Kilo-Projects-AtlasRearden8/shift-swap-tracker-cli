@@ -1,0 +1,17 @@
+# Runtime data (local-first JSON store)
+shifts.json
+*.csv
+*.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.build/
+.eggs/
+*.egg-info/
+
+# Editable install
+.venv/
+venv/
