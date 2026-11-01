@@ -1,17 +1,20 @@
-# Runtime data (local-first JSON store)
-shifts.json
-*.csv
-*.json
-
-# Python cache
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.build/
-.eggs/
-*.egg-info/
 
 # Editable install
+# Python cache
+# Runtime data (local-first JSON store)
+*.csv
+*.egg-info/
+*.json
+*.py[cod]
+*.pyc
+.build/
+.eggs/
+.env
+.env.*
+.mypy_cache/
+.pytest_cache/
 .venv/
-venv/
+__pycache__/
+dist/*.tmp
+shifts.json
+venv/node_modules/
